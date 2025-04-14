@@ -23,19 +23,19 @@ class CalculadoraTest {
 
     @Test
     void suma() {
-        assertEquals(5, calculadora.suma(1, 3));
+        assertEquals(4, calculadora.suma(1, 3));
         assertEquals(-1, calculadora.suma(-3, 2));
     }
 
     @Test
     void resta() {
         assertEquals(1, calculadora.resta(5, 4));
-        assertEquals(-7, calculadora.resta(3, 8));
+        assertEquals(-5, calculadora.resta(3, 8));
     }
 
     @Test
     void multiplicacion() {
-        assertEquals(12, calculadora.multiplicacion(3, 5));
+        assertEquals(15, calculadora.multiplicacion(3, 5));
         assertEquals(0, calculadora.multiplicacion(50, 0));
     }
 
@@ -50,14 +50,14 @@ class CalculadoraTest {
 
     @Test
     void esPar() {
-        assertTrue(calculadora.esPar(6));
+        assertTrue(calculadora.esPar(2));
         assertFalse(calculadora.esPar(9));
     }
 
     @Test
     void maximo() {
-        assertEquals(9, calculadora.maximo(2, 6, 2));
-        assertEquals(7, calculadora.maximo(7, 6, 7));
+        assertEquals(9, calculadora.maximo(2, 9, 2));
+        assertEquals(7, calculadora.maximo(7, 7, 7));
         assertEquals(12, calculadora.maximo(12, 8, 3));
     }
 
